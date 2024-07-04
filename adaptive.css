@@ -15,9 +15,16 @@
 
 @media screen and (max-width: 730px) {
 .menu {
-    max-width: 500px;
+    max-width: ;
+ }
+
+ .popup {
+    left: calc(50% - 275px);
+    max-width: 550px;
+    padding-right: 50px;
+ }
 }
-}
+
 @media screen and (max-width: 545px) {
     .footer .container {
         flex-direction: column;
@@ -27,6 +34,11 @@
     .contact-item {
         text-align: center;
     }
+
+    .popup {
+        left: calc(50% - 155px);
+        max-width: 310px;
+     }
 }
 
 @media screen and (max-width: 530px) {
