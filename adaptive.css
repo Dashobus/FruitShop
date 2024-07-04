@@ -1,0 +1,46 @@
+@media screen and (max-width: 1200px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+}
+
+@media screen and (max-width: 985px) {
+   .product .container {
+       justify-content: center;
+       gap: 20px;
+   }
+}
+
+@media screen and (max-width: 730px) {
+.menu {
+    max-width: 500px;
+}
+}
+@media screen and (max-width: 545px) {
+    .footer .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contact-item {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .menu {
+        max-width: 290px;
+    }
+    }
+
+    @media screen and (max-width: 320px) {
+        .btn.get {
+            width: 140px;
+        }
+        .form-input {
+             width: 290px;
+
+        }
+    

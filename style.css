@@ -1,0 +1,283 @@
+/* a{
+    Это селектор тега, т.е. стилизация по названию тега
+    Стили применятся ко всем тегам а на странице
+} */
+
+/* .container{
+    Это селектор класса, т.е. стилизация по атрибуту class
+    Стили применятся ко всем тегам у кторорых есть class="container"
+} */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Bloger;
+    src: url('Bloger-sans.ttf');
+}
+
+body {
+    font-family: Bloger, sans-serif;
+    color: #313131;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 30px 0;
+    background-color: #fcfa82;
+}
+
+.menu {
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-link {
+    color: #313131;
+    text-decoration: none;
+}
+
+main {
+    background-image: url('main.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 200px 0;
+
+    background-position: center;
+    position: relative;
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+h1 {
+    position: relative;
+    z-index: 10;
+    padding-bottom: 20px;
+
+    text-align: left;
+}
+
+.main-desc {
+    position: relative;
+    z-index: 10;
+
+    text-align: left;
+
+
+
+}
+
+.product {
+    padding: 60px 0;
+
+    background-color: #fcfa82;
+}
+
+.product .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    row-gap: 40px;
+}
+
+.product-item {
+    padding: 15px;
+    background-color: white;
+
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    width: 310px;
+}
+
+.product-action {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 15px;
+    /* width: 80px; */
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+
+    /* background-color: #423e3e; */
+    /* color: white; */
+
+    font-family: Bloger, sans-serif;
+}
+
+.btn.get {
+    background-color: rgb(246, 252, 126);
+    /* border: 1px solid #fdfdfb; */
+    color: #666363;
+    width: 150px;
+
+}
+
+.btn.more {
+    background-color: rgb(253, 253, 251);
+    border: 1px solid #fcfa82;
+    color: #666363;
+    width: 110px;
+}
+
+.product-info h2 {
+    padding: 10px;
+}
+
+.product-img {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.order {
+    padding: 60px 0;
+}
+
+.order-title {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.form {
+    max-width: 400px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.form-input {
+    width: 300px;
+
+    padding: 15px;
+    font-size: 16px;
+
+    border: 3px solid #fcfa82;
+
+    border-radius: 10px;
+
+    margin-bottom: 10px;
+    outline: none;
+    font-family: Bloger, sans-serif;
+}
+
+.btn.submit {
+    width: 110px;
+
+    background-color: #fcfa82;
+}
+
+.footer {
+    background-color: #fcfa82;
+    padding: 30px 0;
+}
+
+.footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.network a {
+    text-decoration: none;
+}
+
+.network a svg {
+    fill: #313131;
+}
+
+.logo,
+.contact {
+    width: 200px;
+}
+
+.contact-item a {
+    color: #313131;
+}
+
+.contact-item:not(:last-child) {
+    padding-bottom: 10px;
+}
+
+.popup {
+    display: none;
+    width: 700px;
+    padding:  60px 20px;
+
+    z-index: 10000;
+
+    /* display: flex; */
+    flex-direction: column;
+    gap: 15px;
+
+    background-color: #fcfa82;
+
+    position: fixed;
+    left: calc(50% - 350px);
+
+    top: 90px;
+
+    border-radius: 10px ;
+}
+
+.popup-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.popup-close svg {
+    width: 30px;
+    height: 30px;
+    fill: #313131;
+}
+
+#main-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+}
